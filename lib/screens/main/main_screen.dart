@@ -1,4 +1,4 @@
-import 'package:admin_panel/screens/main/widgets/drawer_list_tile.dart';
+import 'package:admin_panel/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/side_menu.dart';
@@ -11,6 +11,7 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Expanded(
               // leva 1/6 partes da tela
@@ -19,9 +20,7 @@ class MainScreen extends StatelessWidget {
             Expanded(
               // leva 5/6 partes da tela
               flex: 5,
-              child: Container(
-                color: Colors.blue,
-              ),
+              child: DashboardScreen(),
             ),
           ],
         ),
