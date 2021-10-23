@@ -7,4 +7,6 @@ class AppColors {
   static const orange = Color(0xFFFFA113);
   static const lightBlue = Color(0xFFA4CDFF);
   static const hardBlue = Color(0xFF007EE5);
+  static const aliveBlue = Color(0xFF26E5FF);
+  static const red = Color(0xFFEE2727);
 }
