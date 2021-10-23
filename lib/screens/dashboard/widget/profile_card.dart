@@ -1,4 +1,5 @@
 import 'package:admin_panel/core/app_colors.dart';
+import 'package:admin_panel/responsive.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -30,12 +31,13 @@ class ProfileCard extends StatelessWidget {
             'assets/images/profile_pic.png',
             height: 38,
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-            child: Text(
-              "Samilly Nunes",
+          if (!Responsive.isMobile(context))
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+              child: Text(
+                "Samilly Nunes",
+              ),
             ),
-          ),
           const Icon(
             Icons.keyboard_arrow_down,
           ),

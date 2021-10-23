@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
+import '../../../responsive.dart';
 
 /// Header que tem o titulo "meus arquivos" e botao de adicionar
 class DashboardHead extends StatelessWidget {
@@ -22,9 +23,9 @@ class DashboardHead extends StatelessWidget {
           icon: const Icon(Icons.add),
           label: const Text("Add New"),
           style: TextButton.styleFrom(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
               horizontal: defaultPadding * 1.5,
-              vertical: defaultPadding,
+              vertical: defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
             ),
           ),
         ),

@@ -1,6 +1,8 @@
+import 'package:admin_panel/controllers/menu_controller.dart';
 import 'package:admin_panel/screens/main/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 import 'core/app_colors.dart';
 
@@ -23,7 +25,14 @@ class MyApp extends StatelessWidget {
             .apply(bodyColor: Colors.white),
         canvasColor: AppColors.secondaryColor,
       ),
-      home: const MainScreen(),
+      home: MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (context) => MenuController(),
+          ),
+        ],
+        child: const MainScreen(),
+      ),
     );
   }
 }
