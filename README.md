@@ -15,7 +15,7 @@ O projeto foi desenvolvido inspirado no projeto encontrado no canal The Flutter 
 
 <img src="https://github.com/SamillyNunes/admin-panel/blob/main/assets/images/readme/mobile2.jpg" height="400px">
 
-<img src="https://github.com/SamillyNunes/admin-panel/blob/main/assets/images/readme/desktop.jpg" height="400px">
+<img src="https://github.com/SamillyNunes/admin-panel/blob/main/assets/images/readme/drawer.jpg" height="400px">
 
 ### Ferramentas necessárias
 Para instalar e executar este projeto, você precisará ter as seguintes ferramentas instaladas:
