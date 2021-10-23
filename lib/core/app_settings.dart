@@ -3,7 +3,7 @@ import 'package:admin_panel/models/recent_file_model.dart';
 
 import 'app_colors.dart';
 
-List demoRecentFiles = [
+List<RecentFileModel> demoRecentFiles = [
   RecentFileModel(
     icon: "assets/icons/xd_file.svg",
     title: "XD File",

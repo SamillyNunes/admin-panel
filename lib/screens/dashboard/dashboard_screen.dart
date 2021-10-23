@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'widget/dashboard_head.dart';
 import 'widget/file_info_card.dart';
 import 'widget/header.dart';
+import 'widget/recent_files.dart';
 import 'widget/storage_details.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -42,6 +43,8 @@ class DashboardScreen extends StatelessWidget {
                           info: demoMyFiels[index],
                         ),
                       ),
+                      const SizedBox(height: defaultPadding),
+                      const RecentFiles(),
                     ],
                   ),
                 ),

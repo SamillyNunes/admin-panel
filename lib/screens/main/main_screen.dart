@@ -12,8 +12,8 @@ class MainScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Expanded(
+          children: const [
+            Expanded(
               // leva 1/6 partes da tela
               child: SideMenu(),
             ),
